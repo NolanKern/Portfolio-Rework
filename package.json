@@ -1,0 +1,14 @@
+{
+    "name": "contact_form",
+    "version": "1.0.0",
+    "description": "Contact Form UI with CSS transitions & progress bar",
+    "main": "contact.js",
+    "scripts": {
+      "sass": "node-sass -w scss/ -o css/"
+    },
+    "author": "Nolan Kern",
+    "license": "MIT",
+    "dependencies": {
+      "node-sass": "^4.9.0"
+    }
+  }

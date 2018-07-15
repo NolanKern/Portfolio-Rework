@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Roboto");
+body {
+  font-family: "Pacifico", cursive;
+  background: #1b1b1b;
+  font-weight: 300;
+  background-image: url("../img/Portfolio_Background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  display: grid;
+}
+
+#titles {
+  position: absolute;
+  width: 18em;
+  height: 50em;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9em;
+  font-size: 350%;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(500px) rotateX(25deg);
+}
+
+#titles:after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+  background-image: linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+#titlecontent {
+  position: absolute;
+  top: 100%;
+  animation: scroll 100s linear 4s;
+}
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+p {
+  font-family: "Pacifico", cursive;
+  color: white;
+}
+
+#skills {
+    opacity: 0;
+    animation: fadein 2s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 40s;
+
+    /* animation: scroll 100s linear 4s infinite; */
+}
+
+@keyframes fadein {
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+
+#tagscloud{
+	width:250px;
+	height:260px;
+	position:relative;
+	font-size:12px;
+	color:#333;
+	margin:20px auto 0;
+	text-align:center;
+}
+#tagscloud a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	color:#333;
+	font-family:Arial;
+	text-decoration:none;
+	margin:0 10px 15px 0;
+	line-height:18px;
+	text-align:center;
+	font-size:12px;
+	padding:1px 5px;
+	display:inline-block;
+	border-radius:3px;
+}
+#tagscloud a.tagc1{
+	background:#666;
+	color:#fff;
+}
+#tagscloud a.tagc2{
+	background:#F16E50;
+	color:#fff;
+}
+#tagscloud a.tagc3{
+	background:#006633;
+	color:#fff;
+}
+#tagscloud a:hover{
+	color:#fff;
+	background:#0099ff;
+}

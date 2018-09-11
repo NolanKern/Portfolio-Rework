@@ -12,6 +12,11 @@ body {
   display: grid;
 }
 
+.header {
+  text-align: center;
+  font-size: 30px;
+}
+
 #titles {
   position: absolute;
   width: 18em;

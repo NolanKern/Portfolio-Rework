@@ -1,26 +1,41 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nolan Kern Projects</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/portfolio.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-</head>
-<body>
-    <header class="header" style='text-align: center; font-size: 30px;'>
-        <a href='./index.html'><i class="fas fa-home"></i></a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <meta http-equiv="refresh" content="0; url=http://www.brilliantsky.org" /> -->
+  </head>
+  <body>
+    <header class="header" style="text-align: center; font-size: 30px;">
+      <a href="./index.html"><i class="fas fa-home"></i></a>
     </header>
 
     <div class="Portfolio">
-        <a class="menu_label" href='www.brilliantsky.org' >
-            <img src='./assets/img/site1.png' alt='Loraine Kern Landing Page' srcset='./assets/img/site1.png' id='Loraine' style='margin-top:25%;'>
-            <span>
-                Loraine Kern Professional Site
-            </span>
-        </a>
-</body>
+      <a class="menu_label" href="">
+        <img
+          src="./assets/img/site1.png"
+          alt="Loraine Kern Landing Page"
+          srcset="./assets/img/site1.png"
+          id="Loraine"
+          style="margin-top:25%;"
+        />
+        <span> Loraine Kern Professional Site </span>
+      </a>
+    </div>
+    <script>
+        $(".menu_label").click(function() {
+          // Perform your action on click here, like redirecting to a new url
+          window.location = "http://www.brilliantsky.org";
+        });
+    </script>
+  </body>
 </html>

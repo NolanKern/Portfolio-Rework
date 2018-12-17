@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/portfolio.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <meta http-equiv="refresh" content="0; url=http://www.brilliantsky.org" /> -->
+    <!--
+      <meta http-equiv="refresh" content="0; url=http://www.brilliantsky.org" />
+    -->
   </head>
   <body>
     <header class="header" style="text-align: center; font-size: 30px;">
@@ -32,10 +34,18 @@
       </a>
     </div>
     <script>
-        $(".menu_label").click(function() {
-          // Perform your action on click here, like redirecting to a new url
-          window.location = "http://www.brilliantsky.org";
-        });
+      $(".menu_label").click(function() {
+        // Perform your action on click here, like redirecting to a new url
+        window.location = "http://www.brilliantsky.org";
+        var http = require("http");
+
+        http
+          .createServer(function(req, res) {
+            res.writeHead(301, { Location: "http://new-website.com" });
+            res.end();
+          })
+          .listen(8888);
+      });
     </script>
   </body>
 </html>

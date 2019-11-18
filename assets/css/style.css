@@ -71,7 +71,7 @@ body {
   opacity: 0.9;
   height: 200px;
   width: 200px;
-  background-image: url("http://jordizle.com/static/img/blank.png");
+  background-image: url("../img/blank.png");
   -webkit-touch-callout: none;
   -moz-touch-callout: none;
   -ms-touch-callout: none;
